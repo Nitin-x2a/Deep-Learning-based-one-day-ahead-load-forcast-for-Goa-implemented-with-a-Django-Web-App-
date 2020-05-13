@@ -1,0 +1,35 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+    <div class="container normal_text">
+      <div class="jumbotron  text_jumbo">
+
+        {% if messages %}
+           {% for message in messages %}
+               <div>
+                   <strong>{{message|safe}}</strong>
+               </div>
+           {% endfor %}
+
+         {% else %}
+           {{order}}
+
+             <form action="" method="POST" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 <div class="form-group">
+                   <h3>Select CSV file containing Festival data</h3>
+                   <br>
+                   <input type="file" class="form-control-file" id="file2" name="file" value='Choose File'>
+                   <br>
+                   <input type="submit" class="btn btn-primary mb-2" value="Upload">
+                 </div>
+             </form>
+
+
+         {% endif %}
+
+       </div>
+     </div>
+
+{% endblock %}

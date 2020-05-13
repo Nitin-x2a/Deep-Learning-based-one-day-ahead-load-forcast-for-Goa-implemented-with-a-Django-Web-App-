@@ -1,0 +1,23 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="jumbotron vertical-center container home_menu">
+
+    <p>Download Results in CSV format: </p>
+      <a href="{% static 'basic/data/result.csv' %}" class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-save-file"></span> Save File
+      </a>
+
+      <br>
+      <br>
+
+    <figure class="figure">
+      <img src="{% static 'basic/data/result.png' %}" class="figure-img img-fluid rounded" alt="">
+      <figcaption class="figure-caption"></figcaption>
+    </figure>
+</div>
+
+{% endblock %}

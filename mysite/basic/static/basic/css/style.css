@@ -1,0 +1,75 @@
+.navbar{
+  background: #0B152E;
+  font-weight: bolder;
+}
+
+.update_nav{
+  color: #AF9304;
+}
+
+.about_nav{
+  color: #1AA907;
+}
+
+.home_nav{
+  color: #37C5DF;
+}
+
+/* .inp_dis {
+    -webkit-text-security: disc;
+} */
+
+body {
+  background: url('nightsky.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.menu_jumbo{
+  margin-top: 8em;
+  margin-left: 8em;
+  background: rgba(0, 0, 0, 0);
+}
+
+.update_jumbo{
+  margin-top: 10em;
+  margin-left: 14em;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text_jumbo{
+  margin-top: 8em;
+  margin-left: 2em;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.res_jumbo{
+  margin-top: 4em;
+  margin-left: 6em;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.home_menu{
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  color: white;
+  border-radius: 1.5em;
+  padding: 1em;
+  margin: 1em;
+  font-family: 'Jost', sans-serif;
+}
+
+.normal_text{
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.4em;
+}
+
+.view_cont{
+  color: white;
+  margin-top: 8em;
+  margin-left: 4em;
+  background: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'basic/css/style.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap">
+    <title>GOA STLF</title>
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <a class="navbar-brand home_nav" href="{% url 'home' %}">Home</a>
+        <a class="nav-link update_nav" href="{% url 'update' %}">Update</a>
+        <a class="nav-link about_nav" style='color:#1AA907;' href="{% url 'about' %}">About</a>
+        {% if user.is_authenticated %}
+        <a class="nav-link about_nav ml-auto" style='color:#1AA907;' href="{% url 'logoutpage' %}">Logout</a>
+        {% else %}
+        <a class="nav-link about_nav ml-auto" style='color:#eb903b;' href="{% url 'loginpage' %}">Admin</a>
+        {% endif %}
+    </nav>
+
+
+    {% block content %}
+
+      <div class="jumbotron vertical-center container menu_jumbo">
+          <span><a class="btn btn-primary home_menu" href="{% url 'forecast' %}" role="button">Make Forecast</a></span>
+          <span><a class="btn btn-primary home_menu" href="{% url 'browse' %}" role="button">Browse Data</a></span>
+          <span><a class="btn btn-primary home_menu" href="{% url 'test' %}" role="button">Test Model</a></span>
+      </div>
+
+    {% endblock %}
+
+  </body>
+</html>

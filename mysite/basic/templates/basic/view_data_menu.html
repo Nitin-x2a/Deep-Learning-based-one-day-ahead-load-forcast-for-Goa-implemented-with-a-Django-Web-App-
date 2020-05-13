@@ -1,0 +1,11 @@
+{% extends 'home.html' %}
+
+{% block content %}
+
+    <div class="jumbotron vertical-center container update_jumbo">
+        <span><a class="btn btn-primary home_menu" href="{% url 'browse_megawatts' %}" role="button">View Load Data</a></span>
+        <span><a class="btn btn-primary home_menu" href="{% url 'browse_festival' %}" role="button">View Festival Data</a></span>
+    </div>
+
+
+{% endblock %}
