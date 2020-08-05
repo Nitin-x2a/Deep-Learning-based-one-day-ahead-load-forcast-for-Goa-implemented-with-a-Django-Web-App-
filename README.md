@@ -1,10 +1,10 @@
 
 Django based simple web app with a Deep Convolutional Neural Network backend implemented with Tensorflow API that forecasts Goa's one-day ahead electric load with fifteen minute resolution
 
-![Image](home.jpg)
+![Image](home.ppg)
 
-![Image](datetime.jpg)
+![Image](datetime.ppg)
 
-![Image](updateload.jpg)
+![Image](updateload.ppg)
 
-![Image](resultspage.jpg)
+![Image](resultspage.png)
