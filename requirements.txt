@@ -11,7 +11,7 @@ cycler==0.10.0
 DateTime==4.3
 defusedxml==0.6.0
 diff-match-patch==20181111
-Django==3.0.3
+Django==3.1.6
 django-csvimport==2.15
 django-import-export==2.1.0
 et-xmlfile==1.0.1
