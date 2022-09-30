@@ -25,7 +25,7 @@ h5py==2.10.0
 html5lib==1.0.1
 idna==2.9
 jdcal==1.4.1
-joblib==0.14.1
+joblib==1.2.0
 json-table-schema==0.2.1
 Keras-Preprocessing==1.1.0
 kiwisolver==1.2.0
